@@ -7,6 +7,12 @@ spring:
     caffeine:
       spec: maximumSize=100,expireAfterWrite=300s
 
+  # redis (Docker redis-container, 호스트 6379 → 컨테이너 6379)
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: 6379
+
   # 도커 컴포즈 가상 네트워크 환경에 대응하도록 URL 주소 최적화
   datasource:
     url: jdbc:mysql://${DB_HOST}:3306/commerceplus?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul&rewriteBatchedStatements=true
