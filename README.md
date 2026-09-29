@@ -1038,6 +1038,8 @@ Redis 분산 락과 원격 캐시 도입을 다시 검토할 수 있습니다.
 - 여러 애플리케이션·서비스가 DB 외부의 공유 자원을 동기화해야 하는 경우
 - 여러 인스턴스에서 캐시 데이터를 공유해야 하는 경우
 
+> 이후 `feature/redis-cache` 브랜치에서 Caffeine → Redis Cache-Aside 전환을 진행했습니다. 상세 내용은 [docs/redis-cache.md](docs/redis-cache.md) 참고.
+
 ---
 ## 12. 협업 방식
 
