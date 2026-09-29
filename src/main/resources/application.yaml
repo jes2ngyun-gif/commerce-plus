@@ -3,9 +3,7 @@ spring:
     import: "optional:aws-parameterstore:/config/commerceplus_prod/"
   application:
     name: commerceplus
-  cache:
-    caffeine:
-      spec: maximumSize=100,expireAfterWrite=300s
+  
 
   # redis (Docker redis-container, 호스트 6379 → 컨테이너 6379)
   data:
